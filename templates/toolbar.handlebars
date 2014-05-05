@@ -7,48 +7,19 @@
 		</li>
 		<li class="close separator"></li>
 		<li>
-			<button title="image settings" class="icon-settings" data-toggle="dropdown"></button>
-			<div class="dropdown">
-				<form name="image-enhancements" data-trigger="reset" data-action="resetEnhancements">
-					<div class="sliders">
-						<div class="control-group">
-							<label title="adjust brightness" class="icon-sun"></label>
-							<input data-trigger="change" data-action="brightness" type="range" min="-100" max="100" step="1" value="0">
-						</div>
-						<div class="control-group">
-							<label title="adjust contrast" class="icon-adjust"></label>
-							<input data-trigger="change" data-action="contrast" type="range" min="-1" max="1" step="0.1" value="0">
-						</div>
-						<div class="control-group">
-							<label title="sharpen" class="icon-droplet"></label>
-							<input data-trigger="change" data-action="sharpen" type="range" min="0" max="1" step="0.1" value="0">
-						</div>
-					</div>
-					<div class="control-group pull-left">
-						<input id="image-desaturate" type="checkbox" data-trigger="change" data-action="desaturate">
-						<label for="image-desaturate">desaturate</label>
-					</div>
-					<div class="control-group pull-right">
-						<input type="reset" value="reset">
-					</div>
-				</form>
-			</div>
+			<button data-trigger="click" data-action="zoomOut" title="Zoom out" class="icon-zoom-out"></button>
 		</li>
 		<li>
-			<button data-trigger="click" data-action="toggleLayout" title="toggle one/two pages at a time" class="icon-file layout layout-single"></button>
-			<button data-trigger="click" data-action="toggleLayout" title="toggle one/two pages at a time" class="icon-copy layout layout-double"></button>
+			<button data-trigger="click" data-action="zoomIn" title="Zoom in" class="icon-zoom-in"></button>
 		</li>
 		<li>
-			<button data-trigger="click" data-action="zoomOut" title="zoom out" class="icon-zoom-out"></button>
+			<button data-trigger="click" data-action="fitWidth" title="Fit page to window width" class="icon-expand"></button>
 		</li>
 		<li>
-			<button data-trigger="click" data-action="zoomIn" title="zoom in" class="icon-zoom-in"></button>
+			<button data-trigger="click" data-action="originalSize" title="Do not scale image" class="icon-expand"></button>
 		</li>
 		<li>
-			<button data-trigger="click" data-action="fitWidth" title="fit page to window width" class="icon-expand"></button>
-		</li>
-		<li>
-			<button data-trigger="click" data-action="fitWindow" title="fit page to window" class="icon-expand-2"></button>
+			<button data-trigger="click" data-action="fitWindow" title="Fit page to window" class="icon-expand-2"></button>
 		</li>
 		<li>
 			<button data-trigger="click" data-action="toggleReadingMode" title="switch reading direction" class="icon-arrow-right-3 manga-false"></button>
