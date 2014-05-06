@@ -4,19 +4,14 @@
 #
 
 	# @echo "Running jshint..."
-	# @./node_modules/.bin/jshint lib/ComicBook.js --config lib/.jshintrc
 build:
 	@echo "Compiling Handlebars templates..."
 	@./node_modules/.bin/handlebars templates/*.handlebars -f lib/templates.js
 	@echo "Compiling and minifying javascript..."
-	@mkdir -p comicbook/js/pixastic
-	@cat lib/vendor/pixastic/pixastic.js lib/vendor/pixastic/pixastic.effects.js lib/vendor/pixastic/pixastic.worker.js lib/vendor/handlebars.runtime-1.0.rc.1.min.js lib/vendor/quo.js lib/templates.js lib/ComicBook.js > comicbook/js/comicbook.js
-	@cp lib/vendor/pixastic/pixastic.js comicbook/js/pixastic
-	@cp lib/vendor/pixastic/pixastic.effects.js comicbook/js/pixastic
-	@cp lib/vendor/pixastic/pixastic.worker.js comicbook/js/pixastic
-	@cp lib/vendor/pixastic/pixastic.worker.control.js comicbook/js/pixastic
-	@cp lib/vendor/pixastic/license-gpl-3.0.txt comicbook/js/pixastic
-	@cp lib/vendor/pixastic/license-mpl.txt comicbook/js/pixastic
+	@mkdir -p comicbook/js
+	@./node_modules/.bin/jshint lib/ComicBook.js --config lib/.jshintrc
+	@cat lib/vendor/handlebars.runtime-1.0.rc.1.min.js lib/vendor/quo.js lib/templates.js lib/ComicBook.js > comicbook/js/comicbook.js
+
 	@./node_modules/.bin/uglifyjs -nc comicbook/js/comicbook.js > comicbook/js/comicbook.min.js
 	@echo "Compiling CSS..."
 	@cat fonts/icomoon-toolbar/style.css css/reset.css css/styles.css css/toolbar.css > comicbook/comicbook.css

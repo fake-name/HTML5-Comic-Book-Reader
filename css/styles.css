@@ -16,7 +16,7 @@
 	top: 0;
 	margin: 0;
 	cursor: pointer;
-	width: 128px;
+
 	opacity: 0;
 	background: center no-repeat;
 	box-shadow: none;
@@ -38,11 +38,30 @@ body:not(.mobile) .navigate:hover {
 
 .navigate-left {
 	left: 0;
+	width: 128px;
 }
 
 .navigate-right {
 	right: 0;
+	width: 128px;
 }
+
+
+
+.navigate-center {
+	top: 0;
+	margin: 0;
+	cursor: pointer;
+	margin-right: 20%;
+	margin-left: 20%;
+	width: 60%;
+	opacity: 0;
+	background: center no-repeat;
+	box-shadow: none;
+	padding: 0 3em;
+	position: relative;
+}
+
 
 #cb-loading-overlay {
 	z-index: 100;

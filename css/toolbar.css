@@ -30,16 +30,8 @@ button, input, label {
 	z-index: 99;
 	margin-bottom: 0;
 	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
-	opacity: 0;
-  transition: opacity 0.2s ease-in-out;
-}
-
-.mobile .toolbar {
 	opacity: 1;
-}
-
-.toolbar:hover {
-	opacity: 1;
+	transition: opacity 0.2s ease-in-out;
 }
 
 .toolbar li {

@@ -18,5 +18,6 @@
     "maxerr": 50,
     "quotmark": "single",
     "trailing": false,
+    "devel": true,
     "indent": 2
 }
