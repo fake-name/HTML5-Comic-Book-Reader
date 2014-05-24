@@ -27,13 +27,46 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="icon-"] {
 */
-.icon-file, .icon-image, .icon-zoom-out, .icon-zoom-in, .icon-expand, .icon-expand-2, .icon-folder-open, .icon-folder, .icon-cog, .icon-menu, .icon-wrench, .icon-settings, .icon-loop, .icon-pin, .icon-first, .icon-last, .icon-arrow-left, .icon-arrow-right, .icon-arrow-left-2, .icon-arrow-right-2, .icon-arrow-left-3, .icon-arrow-right-3, .icon-previous, .icon-next, .icon-droplet, .icon-adjust, .icon-sun, .icon-remove-sign, .icon-remove, .icon-copy {
+.icon-file,
+.icon-image,
+.icon-zoom-out,
+.icon-zoom-in,
+.icon-expand,
+.icon-expand-2,
+.icon-folder-open,
+.icon-folder,
+.icon-cog,
+.icon-menu,
+.icon-wrench,
+.icon-settings,
+.icon-loop,
+.icon-pin,
+.icon-first,
+.icon-last,
+.icon-arrow-left,
+.icon-arrow-right,
+.icon-arrow-left-2,
+.icon-arrow-right-2,
+.icon-arrow-left-3,
+.icon-arrow-right-3,
+.icon-previous,
+.icon-next,
+.icon-droplet,
+.icon-adjust,
+.icon-sun,
+.icon-remove-sign,
+.icon-remove,
+.icon-spinner,
+.icon-contract,
+.icon-contract2,
+.icon-copy {
 	font-family: 'toolbar';
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
 	text-transform: none;
+	font-size: 2.5em;
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 }
@@ -126,4 +159,13 @@ you can use the generic selector below, but it's slower:
 }
 .icon-copy:before {
 	content: "\e037";
+}
+.icon-spinner:before {
+	content: "\e600";
+}
+.icon-contract:before {
+	content: "\e601";
+}
+.icon-contract2:before {
+	content: "\e602";
 }
