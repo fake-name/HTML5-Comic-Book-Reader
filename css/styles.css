@@ -31,7 +31,13 @@
 	position: relative;
 }
 
-body:not(.mobile) .navigate:hover {
+/*
+	:hover is sticky for touch w10 chrome, which
+	means any hover'ed elements get stuck on once
+	they're used once on that platform. Obviously,
+	that is kind of unacceptable.
+*/
+body:not(.mobile) .navigate:active {
 	opacity: 1;
 }
 
