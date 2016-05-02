@@ -1,21 +1,26 @@
 
 .thumbnails {
-  position: absolute;
-  color: white;
-  background-color: black;
-  background-image: linear-gradient(to bottom, rgb(80, 80, 80), rgb(17, 17, 17));
-  padding: 0.5em;
-  border-radius: 0.2em;
-  margin: 5em;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  display: none;
-  overflow: auto;
+	position: absolute;
+	color: white;
+	background-color: black;
+	background-image: linear-gradient(to bottom, rgb(80, 80, 80), rgb(17, 17, 17));
+	padding: 0.5em;
+	border-radius: 0.2em;
+	margin: 5em;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	display: none;
+	overflow: auto;
+	margin-top: 12%;
+	margin-bottom: 14%;
+	z-index: 10000;
 }
 
 .thumbnails img {
-  display: inline-block;
-  margin: 0.5em;
+	display: inline-block;
+	margin: 0.5em;
+	max-height: 150px;
+	z-index: 10001;
 }

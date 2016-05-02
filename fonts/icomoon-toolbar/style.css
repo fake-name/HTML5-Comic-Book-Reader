@@ -90,7 +90,7 @@ you can use the generic selector below, but it's slower:
 .icon-expand:before {
 	content: "\e004";
 }
-.icon-expand2:before {
+.icon-expand-2:before {
 	content: "\e005";
 }
 .icon-folder-open:before {
